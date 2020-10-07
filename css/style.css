@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: brown;
+}   
+#nav-menu img{
+    margin: 5px;
+    height: 65px;
+    cursor: pointer;
+    position: absolute;
+}
+#nav-menu img:hover{
+    box-shadow: 0 0 0 2px white;
+    border-radius: 50em;
+}
+#logo{
+    float: right;
+    
+}
+#logo img{
+    height: 65px;
+    margin: 3px;
+}
+#menu_fullscreen{
+    position: absolute;
+    background-color: brown;
+    height: 95%;
+    width: 100%;
+}
+#menu_fullscreen ul{
+    margin-top: 10%;
+}
+a{
+    text-decoration: none;
+}
+#menu_fullscreen li{
+    list-style: none;
+    font-size: 24px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-left: -40px;
+}
+#menu_fullscreen li:hover{
+    background-color: gold;
+    cursor: pointer;
+}
+#banner h1{
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Sansita Swashed', cursive;
+    position: absolute;
+}
+#banner img{
+    width: 100%;
+}
+.title{
+    background-color: #141414;
+    border-style: solid;
+    border-color: rgb(1, 225, 255);
+    border-width: 3px;
+    margin-top: -4px;
+
+}
+.title h2{
+    text-align: center;
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+#descricao{
+    width: 80%;
+    height: 800px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(1, 225, 255);
+    border-width: 5px;
+    background-color: whitesmoke;
+}
+#descricao p{
+    margin: 20px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #363636;
+}
+.background_app{
+    position: absolute;
+    background-image: linear-gradient(to bottom right, brown, brown, rgb(1, 225, 255));
+}
+#qr_code_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+#box{
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+#logo_os{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+#qr_code{
+    width: 100%;
+}
+#download{
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+}
+@media screen and (max-width: 60em){
+    #banner h1{
+        font-size: 24px;
+    }
+    #banner{
+        overflow: hidden;
+    }
+    #banner img{
+        width: 300%;
+    }
+    #descricao{
+        width: 95%;
+    }
+    #qr_code_content{
+        grid-template-columns: 1fr;
+        margin-top: 0;
+    }
+    #box{
+        width: 60%;
+    }
+    #logo_os{
+        width: 40%;
+        margin-top: 50px;
+    }
+    #qr_code{
+        width: 100%;
+    }
+    #download{
+        margin-top: 0;
+    }
+}

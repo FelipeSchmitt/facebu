@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>FaceBu Recognize</title>
+</head>
+<body>
+    <div id="home">
+    <nav>
+        <div id="nav-menu">
+            <img src="imagens/menu.png" alt="menu" onclick="menu()">
+        </div>
+        <div id="logo">
+            <img src="imagens/logo.png" alt="logo">
+        </div>
+    </nav>
+    <div id="menu_fullscreen" style="display: none;" >
+        <ul>
+            <a href="#home"><li onclick="menu()">Inicio</li></a>
+            <a href="#about"><li onclick="menu()">Sobre</li></a>
+            <a href="#app"><li onclick="menu()">Download App</li></a>
+        </ul>
+    </div>
+    <div id="content" style="display: block;">
+    <div id="banner">
+        <h1 id="h1" style="position: absolute;">Reconhecimento Facial de Bovinos de Corte</h1>
+    <img src="imagens/banner.jpg" alt="">
+</div>
+</div>
+<div id="about">
+<div class="title">
+    <h2>FaceBu</h2>
+</div>
+<div class="background_app">
+<div id="descricao">
+    <p>O FaceBu é um projeto desenvolvimento no Instituto Federal Catarinense Campus Araquari que tem como finalidade fazer o reconhecimento facial de bovinos de corte, 
+    trata-se de uma tecnologia recente desenvolvida em Python, para registrar seu rebanho é necessário que faça a instalação do aplicativo em seu smartphone, tablet(Android, IOS)</p>
+</div>
+
+<div id="app">
+<div id="qr_code_content">
+    <div id="box">
+        <img src="imagens/android_logo.png" alt="android" id="logo_os">
+        <img src="imagens/qrcode_android.jpg" alt="qr_code" id="qr_code">
+        <a href="https://play.google.com/store"><img src="imagens/google_play.png" alt="google_play" id="download"></a>
+    </div>
+    <div id="box">
+        <img src="imagens/ios_logo.png" alt="ios" id="logo_os">
+        <img src="imagens/qrcode_appstore.jpg" alt="qr_code" id="qr_code">
+        <a href="https://www.apple.com/br/ios/app-store/"><img src="imagens/app_store.png" alt="ios" id="download"></a>
+    </div>
+    
+</div>
+<hr>
+</div>
+</div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
