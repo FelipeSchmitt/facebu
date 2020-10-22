@@ -93,6 +93,89 @@ a{
     font-weight: 400;
     color: #363636;
 }
+#news{
+    background-color: white;
+    width: 96%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(1, 225, 255);
+    border-width: 5px;
+}
+#news h1{
+    text-align: center;
+    font-family:'Roboto';
+    font-weight: 500;
+}
+#news h3{
+    color: rgb(245, 134, 152);
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 5;
+    text-align: center;
+}
+#news_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 97%;
+    overflow: hidden;
+    margin: auto;
+}
+#news_box img{
+    width: 98%;
+    padding: 5px;
+    border-radius: 15px
+}
+#news_id{
+    margin: 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+#img_box{
+    width: 95%;
+    display: block;
+    border-radius: 3px;
+    margin: auto;
+}
+#news_id h2{
+    text-align: center;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+}
+#news_id p{
+    max-height: 100px;
+    margin: 10px;
+    font-family: Helvetica, sans-serif;
+    overflow: hidden;
+    font-size: 18px;
+}
+#app h1{
+    text-align: center;
+    background-color: white;
+    color: red;
+}
+#instagram h3{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+#instagram img{
+    display: block;
+    margin: auto;
+    padding: 10px;
+    width: 20%;
+}
+#instagram img:hover{
+    box-shadow: 0 0 10px white;
+    border-radius: 10em;
+}
+#instagram hr{
+    border-color: white;
+}
 .background_app{
     position: absolute;
     background-image: linear-gradient(to bottom right, brown, brown, rgb(1, 225, 255));
@@ -134,12 +217,21 @@ a{
     #descricao{
         width: 95%;
     }
+    #news{
+        overflow: hidden;
+    }
+    #news_box{
+        grid-template-columns: 1fr;
+    }
     #qr_code_content{
         grid-template-columns: 1fr;
         margin-top: 0;
     }
     #box{
         width: 60%;
+    }
+    #instagram img{
+        width: 50%;
     }
     #logo_os{
         width: 40%;
